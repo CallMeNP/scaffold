@@ -82,7 +82,7 @@ class File
 
     public static function filepath2className($filepath)
     {
-        $filepath = File::trimBasePath(realpath($filepath), APP_PATH . DS . 'src');
+        $filepath = File::trimBasePath(realpath($filepath), SRC_PATH);
         $noExt = dirname($filepath) . DS . basename($filepath, '.php');
         return str_replace(DS, '\\', $noExt);
     }

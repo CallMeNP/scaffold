@@ -60,7 +60,7 @@ class NamespaceCommandLoader implements CommandLoaderInterface
 
     public function getNames()
     {
-        $rdi = new \RecursiveDirectoryIterator(SRC_PATH . DS . str_replace('\\', DS, self::$baseNS), FilesystemIterator::KEY_AS_PATHNAME | FilesystemIterator::SKIP_DOTS | FilesystemIterator::CURRENT_AS_FILEINFO);
+        $rdi = new \RecursiveDirectoryIterator(SRC_PATH . str_replace('\\', DS, self::$baseNS), FilesystemIterator::KEY_AS_PATHNAME | FilesystemIterator::SKIP_DOTS | FilesystemIterator::CURRENT_AS_FILEINFO);
         new class($rdi) extends \RecursiveFilterIterator
         {
             public function accept()
