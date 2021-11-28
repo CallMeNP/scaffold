@@ -1,0 +1,8 @@
+vendor/
+data/*.db
+output/
+tmp/
+.swp
+.swo
+.swi
+composer.lock
