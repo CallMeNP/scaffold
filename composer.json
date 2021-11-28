@@ -1,4 +1,14 @@
 {
+  "name": "CallMeNP/scaffold",
+  "description": "工具代码脚手架",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "np",
+      "email": "np.liamg@gmail.com"
+    }
+  ],
   "require": {
     "slim/slim": "4.*",
     "slim/psr7": "^1.0",
