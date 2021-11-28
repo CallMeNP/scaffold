@@ -2,6 +2,7 @@ vendor/
 data/*.db
 output/
 tmp/
+.idea/
 .swp
 .swo
 .swi
